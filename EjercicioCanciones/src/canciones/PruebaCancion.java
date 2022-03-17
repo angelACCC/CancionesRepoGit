@@ -14,6 +14,7 @@ public static void main(String[] args) {
 		Cancion terceraCancion = new Cancion("Come Join The Murder", "The White Buffalo & The Forest Rangers", 420, false);
 		Cancion cuartaCancion = new Cancion("Mystic", "Tevvez", 360,false);
 		Cancion quintaCancion = new Cancion("Legends", "Tevvez", 320, false);
+		Cancion sextaCancion = new Cancion("Shake","IShowSpeed",340,false);
 
 		if (primeraCancion.reproducirCancion()) {
 			System.out.println(primeraCancion.getTitulo() + "está sonando");
@@ -25,7 +26,7 @@ public static void main(String[] args) {
 			System.out.println("Parece que no son la misma canción");
 		}
 		Cancion nueva = new Cancion("Baba O'riley", "The Who", 310, false);
-		Cancion[] canciones = { primeraCancion, segundaCancion, terceraCancion,cuartaCancion,quintaCancion, nueva };
+		Cancion[] canciones = { primeraCancion, segundaCancion, terceraCancion,cuartaCancion,quintaCancion,sextaCancion, nueva };
 		
 		mostrarCancionesyAutor(canciones);
 		mostrarCancionMasLarga(canciones);
